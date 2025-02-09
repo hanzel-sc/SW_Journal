@@ -1,0 +1,21 @@
+html, body{
+    margin:0;
+    padding:0;
+    height:100%;
+    background: linear-gradient(to bottom, rgb(0, 95, 139) ,  rgb(0, 255, 247));
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  .app-content{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .main-content{
+    display:flex;
+    flex: 1;
+    flex-direction: column;
+    gap:20px;
+    padding:20px;
+  }

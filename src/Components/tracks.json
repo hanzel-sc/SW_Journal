@@ -1,0 +1,40 @@
+[
+    {
+      "id": 1,
+      "name": "Parabola",
+      "artist": "Tool",
+      "file": "parabola.mp3"
+    },
+    {
+      "id": 2,
+      "name": "Interstellar",
+      "artist": "Hans Zimmer",
+      "file": "Hans Zimmer - Interstellar.mp3"
+    },
+    {
+      "id": 3,
+      "name": "Fantaisie-Impromptu(Op.66)",
+      "artist": "Chopin",
+      "file": "Chopin - Fantaisie-Impromptu (Op. 66).mp3"
+    },
+    {
+      "id": 4,
+      "name": "Liebestraum No.3",
+      "artist": "Liszt",
+      "file": "Liszt - Liebestraum No. 3 (Love Dream).mp3"
+    },
+    {
+      "id": 5,
+      "name": "La Campanella",
+      "artist": "Liszt",
+      "file": "Liszt - La Campanella.mp3"
+    },
+    {
+      "id": 6,
+      "name": "River Flows In You",
+      "artist": "Yiruma",
+      "file": "Yiruma - River Flows in You.mp3"
+    }
+]
+
+  

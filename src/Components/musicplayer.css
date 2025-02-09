@@ -1,0 +1,92 @@
+.music-player {
+  width: 100%;  
+  background-color: transparent; 
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+/* Title & Artist Styling */
+.song-title {
+  font-size: 1.5rem;
+  margin: 5px 0;
+}
+
+.artist-name {
+  font-size: 1.2rem;
+  margin: 5px 0;
+  color: #ccc;
+}
+
+/* Progress Bar Section */
+.time-bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 0 10px; 
+  box-sizing: border-box;
+}
+
+
+
+.time {
+  font-size: 0.9rem;
+  min-width: 40px; /* Keeps time text aligned */
+}
+
+/* Progress Bar Styling */
+.progress-bar {
+  flex-grow: 1;
+  margin: 0 10px;
+  appearance: none;
+  height: 6px;
+  background: #faf4f4;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%; /* Ensures full width */
+  max-width: none;
+}
+
+.progress-bar::-webkit-slider-thumb {
+  background:#00FFDF ;
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.music-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.music-controls button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.music-controls button:hover {
+  color: #00FFDF;
+}
+
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .music-player {
+    max-width: 90%;
+  }
+}
