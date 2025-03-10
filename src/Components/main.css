@@ -10,6 +10,7 @@ html {
     margin-top: 50px; 
     text-align: center;
     justify-content: center;
+    
 }
 
 .left-section {
@@ -25,6 +26,7 @@ html {
 }
 .right-section {
     flex: 1;
+    flex-direction: column;
     max-width: 30%;
     display: flex;
     align-items: center;
@@ -36,21 +38,20 @@ html {
     font-weight: bold;
     padding: 40px;
     min-height: 100%;
+    align-self: center;
 }
 
 #music-section, #about-section, #get-started-section {
     margin-top:0px;
     padding: 20px;
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.15);
+    background: linear-gradient(to right, rgb(7, 83, 204), rgb(17, 194, 210), rgb(7, 83, 204));
     backdrop-filter: blur(20px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-#music-section, #about-section, #get-started-section {
     min-height: 150px;
 }
+
 
 
 #music-section:hover, #about-section:hover, #get-started-section:hover {
@@ -69,4 +70,5 @@ html {
         width: 100%;
         height: auto;
     }
+
 }

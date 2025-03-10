@@ -3,6 +3,7 @@
     padding: 10px 20px;
     margin-right: auto;
 }
+
 .navlist
 {
     list-style: none;
@@ -21,4 +22,5 @@
 
 .navlist a:hover {
     color: cyan;
+    cursor: pointer;
 }

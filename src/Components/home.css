@@ -1,0 +1,37 @@
+.home-container
+{
+    display:flex;
+    margin-top: 50px;
+    height: 100vh;
+    justify-content: space-between;
+    gap: 20px;
+    max-height: 100%;
+}
+
+#home-left,#home-middle,#home-right
+{
+    flex: 1;
+    max-width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    min-height: 100%;
+    background: rgba(0, 95, 139, 0.11);
+}
+
+#home-middle
+{
+    
+}
+
+@media (max-width:768px) {
+    .home-container{
+        flex-direction: column;
+        height: auto;
+    }
+}
+

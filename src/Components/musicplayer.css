@@ -19,7 +19,7 @@
 .artist-name {
   font-size: 1.2rem;
   margin: 5px 0;
-  color: #ccc;
+  color: #000000;
 }
 
 /* Progress Bar Section */
@@ -33,8 +33,6 @@
   box-sizing: border-box;
 }
 
-
-
 .time {
   font-size: 0.9rem;
   min-width: 40px; /* Keeps time text aligned */
@@ -45,23 +43,46 @@
   flex-grow: 1;
   margin: 0 10px;
   appearance: none;
-  height: 6px;
-  background: #faf4f4;
+  height: 10px; /* Increased height */
+  background: #333; /* Dark track for contrast */
   border-radius: 5px;
   cursor: pointer;
   width: 100%; /* Ensures full width */
-  max-width: none;
+}
+
+/* WebKit Browsers (Chrome, Safari) */
+.progress-bar::-webkit-slider-runnable-track {
+  height: 10px;
+  background: linear-gradient(to right, #00FFDF, #0077FF);
+  border-radius: 5px;
 }
 
 .progress-bar::-webkit-slider-thumb {
-  background:#00FFDF ;
   appearance: none;
-  width: 14px;
-  height: 14px;
+  width: 16px;
+  height: 16px;
+  background: #FFF;
+  border: 2px solid #00FFDF;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translateY(-4px); /* Center thumb properly */
+}
+
+/* Firefox */
+.progress-bar::-moz-range-track {
+  height: 10px;
+  background: linear-gradient(to right, #00FFDF, #0077FF);
+  border-radius: 5px;
+}
+
+.progress-bar::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #FFF;
+  border: 2px solid #00FFDF;
   border-radius: 50%;
   cursor: pointer;
 }
-
 .music-controls {
   display: flex;
   justify-content: center;
@@ -73,7 +94,7 @@
 .music-controls button {
   background: none;
   border: none;
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: 2rem;
   cursor: pointer;
   transition: 0.2s;
